@@ -57,6 +57,8 @@ A terminal is a program that allows you to interact with the shell.
 - `mv -i` : prompt before overwriting existing files
 - `mv -f` : force overwrite existing files
 - `mv <dir1> <path> `: move dir1 to specified path
+- `mv {path}/* mv {path}/.* {path}/`: move all files and even hidden ones to specified path.
+
 
 ### **rm**
 - `rm <file_name>`: delete file_name.
@@ -463,5 +465,10 @@ A vim is a way to edit files.
 - `vim -c "set number" -c "set hlsearch" <file_name>`: open file_name with line numbers and highlight search.
 
 ## Personalization terminal
-- `chsc`: change shell.
+- [bash](https://ohmybash.nntoan.com)
+- [zsh](https://ohmyz.sh)  
 
+This is my terminal after personalization.  
+usr -> venv_info -> path -> GitHub branch
+
+![image](images/my_terminal.png)
