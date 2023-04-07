@@ -1,4 +1,45 @@
 # **Terminal**
+## Table of Contents
+- [What is a command?](#what-is-a-command)
+- [What is a command line (shell)?](#what-is-a-command-line-shell)
+- [What is a terminal?](#what-is-a-terminal)
+- [Commands](#commands)
+  - [ls](#ls)
+  - [tree](#tree)
+  - [cd](#cd-path)
+  - [pwd](#pwd-print-working-directory)
+  - [managing files](#managing-files)
+    - [touch](#touch)
+    - [cp](#cp)
+    - [mv](#mv)
+    - [rm](#rm)
+    - [mkdir](#mkdir)
+    - [cat head tail less](#cat-head-tail-less)
+  - [xdg-open](#xdg-open)
+  - [nautlius](#nautlius)
+  - [type](#type)
+  - [alias](#alias)
+  - [help](#help)
+  - [man](#man)
+  - [info](#info)
+  - [whatis](#whatis)
+  - [Wildcards](#wildcards)
+  - [redirection](#redirection)
+  - [pipes](#pipes)
+  - [control operators](#control-operators)
+  - [permissions](#permissions)
+  - [environment variables](#environment-variables)
+  - [whereis](#whereis)
+  - [searching commands](#searching-commands)
+  - [managing directories](#managing-directories)
+  - [grep](#grep)
+  - [red utilities](#red-utilities)
+  - [compression](#compression)
+  - [Process management](#process-management)
+  - [background processes](#background-processes)
+  - [vim](#vim)
+  - [customizing the terminal](#customize-the-terminal)
+
 ## what is a command?
 A command is a program that you can run from the terminal, it is also a utility of the shell, a shell function, or an alias. A command can receive arguments and options.
 ## what is a command line (shell)?
@@ -227,10 +268,10 @@ chmod u=rwx,g=rwx,o=rwx file : set permissions to 777
 ### **change password**
 passwd : change password
 
-## **simbolik mode**
-u : user
-g : group
-o : other
+### **simbolik mode**
+- u : user
+- g : group
+- o : other
 ### **managing permissions**
 - `chmod u=rwx,g=rwx,o=rwx file_name`: set permissions to 777
 - `chmod u=rwx,g=rwx,o=rx file_name`: set permissions to 775
@@ -344,13 +385,13 @@ A whereis is a way to find files.
 - `whereis -m <file_name>`: find file_name manuals.
 - `whereis -s <file_name>`: find file_name sources.
 
-## ln
- ln -s : create symbolic links
- ## find
- find . -name "*.txt" : find files with .txt extension
- find . -name "*.txt" -exec grep "foo" {} \; : find files with .txt extension and grep for "foo"
- find . -name "*.txt" -exec grep "foo" {} \; -print : find files with .txt extension and grep for "foo", print results
- find . -name "*.txt" -exec grep "foo" {} \; -print -exec rm {} \; : find files with .txt extension and grep for "foo", print results, remove files
+<!-- ## ln
+ln -s : create symbolic links
+## find
+find . -name "*.txt" : find files with .txt extension
+find . -name "*.txt" -exec grep "foo" {} \; : find files with .txt extension and grep for "foo"
+find . -name "*.txt" -exec grep "foo" {} \; -print : find files with .txt extension and grep for "foo", print results
+find . -name "*.txt" -exec grep "foo" {} \; -print -exec rm {} \; : find files with .txt extension and grep for "foo", print results, remove files -->
 
 ### grep
 A grep is a way to search for a pattern in a file.  
@@ -464,7 +505,7 @@ A vim is a way to edit files.
 - `vim -c "set number" <file_name>`: open file_name with line numbers.
 - `vim -c "set number" -c "set hlsearch" <file_name>`: open file_name with line numbers and highlight search.
 
-## Personalization terminal
+## customize the terminal
 - [bash](https://ohmybash.nntoan.com)
 - [zsh](https://ohmyz.sh)  
 
@@ -472,3 +513,6 @@ This is my terminal after personalization.
 usr -> venv_info -> path -> GitHub branch
 
 ![image](images/my_terminal.png)
+
+## References
+- [Platzi: Curso de Introducción a la Terminal y Línea de Comandos](https://platzi.com/cursos/terminal/)
